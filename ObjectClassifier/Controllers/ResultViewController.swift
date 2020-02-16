@@ -16,14 +16,27 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var selectedImageCiew: UIImageView!
     
     override func viewDidLoad() {
-        
+   
         super.viewDidLoad()
-        
         selectedImageCiew.image = image
         let classifierInstance: Classifier = Classifier(classifier_file: Resnet50().model, image: image, label: classificationLabel)
-      
-        classifierInstance.getClassifications()
-
+        
+        
+        let activityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+        self.view.addSubview(activityIndicatorView)
+        activityIndicatorView.frame = self.view.frame
+        activityIndicatorView.center = self.view.center
+        activityIndicatorView.startAnimating()
+                   
+        DispatchQueue.global().async {
+            sleep(3)
+            DispatchQueue.main.async {
+                activityIndicatorView.stopAnimating()
+                classifierInstance.getClassifications()
+            }
+        }
+                   
+            
         
     }
     

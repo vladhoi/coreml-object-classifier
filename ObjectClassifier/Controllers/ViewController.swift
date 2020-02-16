@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         imagePicker.dismiss(animated: true, completion: nil)
+            
         performSegue(withIdentifier: "goToResult", sender: self)
         
     }
