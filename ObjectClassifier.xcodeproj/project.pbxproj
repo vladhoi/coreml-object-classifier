@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F6B34A723F9C3260092D979 /* ResNet-50-deploy.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 8F6B34A623F9C3260092D979 /* ResNet-50-deploy.prototxt */; };
+		8F6B34AA23F9C3580092D979 /* script.py in Resources */ = {isa = PBXBuildFile; fileRef = 8F6B34A923F9C3580092D979 /* script.py */; };
+		8F6B34AC23F9C3AF0092D979 /* requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F6B34AB23F9C3AF0092D979 /* requirements.txt */; };
 		8FFFBB4623F8AC3100ADF3F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFFBB4523F8AC3100ADF3F3 /* AppDelegate.swift */; };
 		8FFFBB4823F8AC3100ADF3F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFFBB4723F8AC3100ADF3F3 /* SceneDelegate.swift */; };
 		8FFFBB4A23F8AC3100ADF3F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFFBB4923F8AC3100ADF3F3 /* ViewController.swift */; };
@@ -20,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F6B34A623F9C3260092D979 /* ResNet-50-deploy.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ResNet-50-deploy.prototxt"; sourceTree = "<group>"; };
+		8F6B34A823F9C3310092D979 /* resnet50.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = resnet50.caffemodel; sourceTree = "<group>"; };
+		8F6B34A923F9C3580092D979 /* script.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = script.py; sourceTree = "<group>"; };
+		8F6B34AB23F9C3AF0092D979 /* requirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = requirements.txt; sourceTree = "<group>"; };
 		8FFFBB4223F8AC3100ADF3F3 /* ObjectClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFFBB4523F8AC3100ADF3F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFFBB4723F8AC3100ADF3F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,9 +52,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6B34A523F9C2EE0092D979 /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				8F6B34A823F9C3310092D979 /* resnet50.caffemodel */,
+				8F6B34A923F9C3580092D979 /* script.py */,
+				8F6B34A623F9C3260092D979 /* ResNet-50-deploy.prototxt */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
 		8FFFBB3923F8AC3100ADF3F3 = {
 			isa = PBXGroup;
 			children = (
+				8F6B34AB23F9C3AF0092D979 /* requirements.txt */,
+				8F6B34A523F9C2EE0092D979 /* Convert */,
 				8FFFBB6523F996BA00ADF3F3 /* .gitignore */,
 				8FFFBB4423F8AC3100ADF3F3 /* ObjectClassifier */,
 				8FFFBB4323F8AC3100ADF3F3 /* Products */,
@@ -154,9 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FFFBB6623F996BA00ADF3F3 /* .gitignore in Resources */,
+				8F6B34AA23F9C3580092D979 /* script.py in Resources */,
 				8FFFBB5223F8AC3300ADF3F3 /* LaunchScreen.storyboard in Resources */,
 				8FFFBB4F23F8AC3300ADF3F3 /* Assets.xcassets in Resources */,
 				8FFFBB4D23F8AC3100ADF3F3 /* Main.storyboard in Resources */,
+				8F6B34AC23F9C3AF0092D979 /* requirements.txt in Resources */,
+				8F6B34A723F9C3260092D979 /* ResNet-50-deploy.prototxt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
