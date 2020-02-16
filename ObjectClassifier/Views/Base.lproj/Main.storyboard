@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ObjectClassifier" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ViewControllee">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -64,21 +64,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ToF-u7-9Mn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ToF-u7-9Mn">
                                 <rect key="frame" x="0.0" y="20" width="375" height="492"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg6-Ol-xg3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bg6-Ol-xg3">
                                 <rect key="frame" x="49" y="520" width="277" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="L4p-P1-GLh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fmW-44-9sc" firstAttribute="bottom" secondItem="bg6-Ol-xg3" secondAttribute="bottom" constant="20" id="RtR-kE-4w2"/>
+                            <constraint firstItem="ToF-u7-9Mn" firstAttribute="top" secondItem="fmW-44-9sc" secondAttribute="top" constant="20" id="aCq-Fj-jM3"/>
+                            <constraint firstItem="ToF-u7-9Mn" firstAttribute="leading" secondItem="fmW-44-9sc" secondAttribute="leading" id="lOk-QW-LBT"/>
+                            <constraint firstItem="bg6-Ol-xg3" firstAttribute="top" secondItem="ToF-u7-9Mn" secondAttribute="bottom" constant="8" id="nGY-YZ-RqG"/>
+                            <constraint firstItem="bg6-Ol-xg3" firstAttribute="centerX" secondItem="pK0-JE-YHt" secondAttribute="centerX" id="o2M-J9-Enl"/>
+                            <constraint firstItem="bg6-Ol-xg3" firstAttribute="centerX" secondItem="ToF-u7-9Mn" secondAttribute="centerX" id="ord-oQ-Q2Y"/>
+                            <constraint firstItem="bg6-Ol-xg3" firstAttribute="leading" secondItem="fmW-44-9sc" secondAttribute="leading" constant="49" id="wjP-uz-tDJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fmW-44-9sc"/>
                     </view>
                     <connections>
+                        <outlet property="classificationLabel" destination="bg6-Ol-xg3" id="IF0-f9-quh"/>
                         <outlet property="selectedImageCiew" destination="ToF-u7-9Mn" id="hKo-f7-U0I"/>
                     </connections>
                 </viewController>

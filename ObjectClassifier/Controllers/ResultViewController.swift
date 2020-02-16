@@ -7,19 +7,25 @@
 //
 
 import UIKit
-import CoreML
-import Vision
-
 
 class ResultViewController: UIViewController {
     
-    var image: UIImage?
-    
+    var image: UIImage!
+    @IBOutlet weak var classificationLabel: UILabel!
     @IBOutlet weak var selectedImageCiew: UIImageView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         selectedImageCiew.image = image
+        let classifierInstance: Classifier = Classifier(classifier_file: Resnet50().model, image: image, label: classificationLabel)
+        classifierInstance.getClassifications()
+        
     }
+    
+    override func didReceiveMemoryWarning() {
+        print(super.didReceiveMemoryWarning())
+    }
+    
     
 }
