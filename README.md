@@ -5,9 +5,9 @@
 
 Object classification on iOS with CoreML Framework.
 
-<img src="Resources/main.png" alt="drawing" width="250"/>
-<img src="Resources/mountain.png" alt="drawing" width="250"/>
-<img src="Resources/labrador.png" alt="drawing" width="250"/>
+<img src="Resources/main.png" alt="drawing" width="220"/>
+<img src="Resources/mountain.png" alt="drawing" width="220"/>
+<img src="Resources/labrador.png" alt="drawing" width="220"/>
 
 
 ## Requirements
