@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreML
+import Vision
+
 
 class ResultViewController: UIViewController {
     
