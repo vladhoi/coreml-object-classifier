@@ -5,10 +5,12 @@
 
 Object classification on iOS with CoreML Framework.
 
-<img src="Resources/main.png" alt="drawing" width="220"/>
-<img src="Resources/mountain.png" alt="drawing" width="220"/>
-<img src="Resources/labrador.png" alt="drawing" width="220"/>
 
+<p float="left">
+    <img src="Resources/main.png" alt="drawing" width="220"/>
+    <img src="Resources/mountain.png" alt="drawing" width="220"/>
+    <img src="Resources/labrador.png" alt="drawing" width="220"/>
+</p>
 
 ## Requirements
 - Xcode 11.3+
