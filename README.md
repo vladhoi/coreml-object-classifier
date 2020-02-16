@@ -7,9 +7,9 @@ Object classification on iOS with CoreML Framework.
 
 
 <p float="left">
-    <img src="Resources/main.png" alt="drawing" width="220"/>
-    <img src="Resources/mountain.png" alt="drawing" width="220"/>
-    <img src="Resources/labrador.png" alt="drawing" width="220"/>
+    <img src="Resources/main.png" alt="drawing" width="235"/>
+    <img src="Resources/mountain.png" alt="drawing" width="235"/>
+    <img src="Resources/labrador.png" alt="drawing" width="235"/>
 </p>
 
 ## Requirements
@@ -20,7 +20,7 @@ Object classification on iOS with CoreML Framework.
 ## Model
  ResNet-50 https://github.com/KaimingHe/deep-residual-networks/blob/master/prototxt/ResNet-50-deploy.prototxt
  
-## Model Convertion
+## Model Conversion
 1. Create the virtual env with conda:
 ```sh
 $ conda create --name <name> python=2.7
