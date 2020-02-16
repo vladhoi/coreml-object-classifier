@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Just A Title-->
+        <!--Input Selection-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ObjectClassifier" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,13 +19,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gth-e3-R7Z">
+                                <rect key="frame" x="110" y="347" width="155" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Take a Photo"/>
+                                <connections>
+                                    <action selector="takePhotoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VU2-J7-lCt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4c-SZ-B4l">
+                                <rect key="frame" x="69" y="417" width="237" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Select From Library"/>
+                                <connections>
+                                    <action selector="selectPhotoFromLibrary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rm9-4I-lYZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gth-e3-R7Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4S7-S4-DXK"/>
+                            <constraint firstItem="B4c-SZ-B4l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="6Ut-OJ-zoT"/>
+                            <constraint firstItem="gth-e3-R7Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="TLC-YF-ZGp"/>
+                            <constraint firstItem="B4c-SZ-B4l" firstAttribute="centerX" secondItem="gth-e3-R7Z" secondAttribute="centerX" id="ThK-3t-njo"/>
+                            <constraint firstItem="gth-e3-R7Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="207" id="USX-uA-hLv"/>
+                            <constraint firstItem="B4c-SZ-B4l" firstAttribute="top" secondItem="gth-e3-R7Z" secondAttribute="bottom" constant="26" id="dk6-rF-OmA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Just A Title" largeTitleDisplayMode="always" id="rOJ-Po-3pn"/>
+                    <navigationItem key="navigationItem" title="Input Selection" id="rOJ-Po-3pn"/>
                     <connections>
-                        <outlet property="navigationBar" destination="rOJ-Po-3pn" id="jzX-ye-52L"/>
                         <segue destination="lrS-3y-14x" kind="presentation" identifier="goToResult" id="vPe-dE-886"/>
                     </connections>
                 </viewController>
