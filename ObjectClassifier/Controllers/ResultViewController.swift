@@ -9,6 +9,7 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+  
     
     var image: UIImage!
     @IBOutlet weak var classificationLabel: UILabel!
@@ -17,15 +18,20 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         selectedImageCiew.image = image
         let classifierInstance: Classifier = Classifier(classifier_file: Resnet50().model, image: image, label: classificationLabel)
+      
         classifierInstance.getClassifications()
+
         
     }
     
     override func didReceiveMemoryWarning() {
         print(super.didReceiveMemoryWarning())
     }
-    
+   
+
+   
     
 }
