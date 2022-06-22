@@ -19,7 +19,7 @@ mkl-fft==1.0.15
 mkl-random==1.1.0
 mkl-service==2.3.0
 mock==3.0.5
-numpy==1.16.6
+numpy==1.22.0
 protobuf==3.11.3
 PyYAML==5.4
 scipy==1.2.1
